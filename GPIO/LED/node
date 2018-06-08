@@ -1,0 +1,14 @@
+/ {
+	my_vdev@4800a000 {
+		compatible = "ti,techved-vDev";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		reg = <0x4800a000 0x1000>; /*4KB=4096=0x1000*/
+		status = "okay";
+	};
+
+	extled {
+                compatible = "gpio-extled";
+                gpios = <&gpio0 27 GPIO_ACTIVE_LOW>;
+        };
+};

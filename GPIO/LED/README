@@ -1,0 +1,22 @@
+Driver compilation and Driver load
+===================================
+make 
+After compilation you will get mydummy.ko and led.ko
+
+#connect adb #
+--------------
+#adb shell 
+ $mount -wo remount rootfs /
+ctrl + d ;
+#adb push mydummy.ko /
+#adb push led.ko /
+#adb shell 
+#insmod mydummy.ko 
+
+#insmod led.ko 
+
+
+Status:
+======
+1. Not fully Developed and tested.! 
+
